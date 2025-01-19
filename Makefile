@@ -24,7 +24,7 @@ INCDIR = $(SRCROOT)/src
 LIBDIR = $(SRCROOT)/lib
 
 DARWIN := $(filter Darwin,$(shell uname -s))
-SO_EXT := $(if $(DARWIN),dylib,so)
+SO_EXT := dll
 
 ifneq (,$(strip $(DESTDIR)))
   INSTALL_ROOT = $(DESTDIR)
@@ -54,10 +54,10 @@ ifneq (0,$(MPI))
   G := $(G) -D$(SN)
   $(shell printf "#ifndef ${SN}\n#define ${SN}\n#endif\n" >>config.h)
   ifeq ($(origin CC),default)
-    CC = mpicc
+    CC = gcc
   endif
   ifeq ($(origin FC),default)
-    FC = mpif77
+    FC = fortran
   endif
 endif
 
@@ -133,9 +133,9 @@ INTP = $(SRCDIR)/findpts_local.o $(SRCDIR)/obbox.o $(SRCDIR)/poly.o \
 
 all : lib install
 
-lib: $(if $(filter-out 0,$(STATIC)),$(SRCDIR)/lib$(LIBNAME).a) $(if $(filter-out 0,$(SHARED)),$(SRCDIR)/lib$(LIBNAME).$(SO_EXT))
+lib: $(if $(filter-out 0,$(STATIC)),$(SRCDIR)/lib$(LIBNAME).lib) $(if $(filter-out 0,$(SHARED)),$(SRCDIR)/lib$(LIBNAME).$(SO_EXT))
 
-$(SRCDIR)/lib$(LIBNAME).a: $(GS) $(FWRAPPER) $(INTP)
+$(SRCDIR)/lib$(LIBNAME).lib: $(GS) $(FWRAPPER) $(INTP)
 	$(AR) $(ARFLAGS) $@ $^
 	ranlib $@
 
@@ -144,7 +144,7 @@ $(SRCDIR)/lib$(LIBNAME).$(SO_EXT): $(GS) $(FWRAPPER) $(INTP)
 
 install: lib
 	@mkdir -p $(INSTALL_ROOT)/lib 2>/dev/null
-	$(if $(filter-out 0,$(STATIC)),cp $(SRCDIR)/lib$(LIBNAME).a $(INSTALL_ROOT)/lib)
+	$(if $(filter-out 0,$(STATIC)),cp $(SRCDIR)/lib$(LIBNAME).lib $(INSTALL_ROOT)/lib)
 	$(if $(filter-out 0,$(SHARED)),cp $(SRCDIR)/lib$(LIBNAME).$(SO_EXT) $(INSTALL_ROOT)/lib)
 	@mkdir -p $(INSTALL_ROOT)/include/gslib 2>/dev/null
 	cp $(SRCDIR)/*.h $(INSTALL_ROOT)/include/gslib
@@ -155,7 +155,7 @@ install: lib
 tests: $(TESTS)
 
 clean:
-	$(RM) config.h $(SRCDIR)/*.o $(SRCDIR)/*.s $(SRCDIR)/*.a $(SRCDIR)/*.$(SO_EXT) $(TESTDIR)/*.o $(FTESTDIR)/*.o $(TESTS)
+	$(RM) config.h $(SRCDIR)/*.o $(SRCDIR)/*.s $(SRCDIR)/*.lib $(SRCDIR)/*.$(SO_EXT) $(TESTDIR)/*.o $(FTESTDIR)/*.o $(TESTS)
 
 $(TESTS): % : %.c | lib install
 	$(CC) $(CFLAGS) -I$(INSTALL_ROOT)/include $< -o $@ -L$(INSTALL_ROOT)/lib -l$(LIBNAME) -lm $(LDFLAGS)
