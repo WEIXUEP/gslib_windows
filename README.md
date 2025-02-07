@@ -9,14 +9,11 @@
 
 
 # Build Instructions
-
-GNU-Make is required.
-
-Msys64 compiler for windows is required, it contains gcc and fortran.
+Msys64 compiler for windows is required, it contains gcc, fortran, GNU-make.
 
 MPI on windows is required, download the two files: https://www.microsoft.com/en-us/download/details.aspx?id=105289
 
-Set ENV CPATH and LIBRARY of MS-MPI for gcc complie. For MSVC of VS, the header path and lib path is "INCLUDE" and "LIB"
+Set ENV CPATH and LIBRARY of MS-MPI for gcc complie. However, for MSVC of VS, the header path and lib path is "INCLUDE" and "LIB"
 
 ```
 CPATH:C:\Program Files (x86)\Microsoft SDKs\MPI\Include
@@ -32,6 +29,9 @@ make
 Different make options are available (see Makefile).
 
 We can get gslib_windows\build\lib\libgs.lib for windows.
+
+# Differences
+The Makefile has been modified. The Makefile_Linux serves as the original Makefile for the Linux system. For the differences, please refer to the windows.patch.
 
 # Applications
 
