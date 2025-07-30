@@ -25,7 +25,7 @@ CMAKE_AR:FILEPATH=D:/Program_Professional/Microsoft Visual Studio/2022/BuildTool
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -91,7 +91,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=/debug /INCREMENTAL
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/gslib
+CMAKE_INSTALL_PREFIX:PATH=K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/install
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.43.34808/bin/Hostx64/x64/link.exe
@@ -209,7 +209,7 @@ MKL:BOOL=OFF
 MPI:BOOL=ON
 
 //Executable for running MPI programs.
-MPIEXEC_EXECUTABLE:FILEPATH=D:/Program_Professional/Microsoft MPI/Bin/mpiexec.exe
+MPIEXEC_EXECUTABLE:FILEPATH=F:/Intel/oneAPI/mpi/latest/bin/mpiexec.exe
 
 //Maximum number of processors available to run MPI applications.
 MPIEXEC_MAX_NUMPROCS:STRING=12
@@ -229,22 +229,22 @@ MPIEXEC_PREFLAGS:STRING=
 MPI_CXX_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for CXX
-MPI_CXX_COMPILER:FILEPATH=MPI_CXX_COMPILER-NOTFOUND
+MPI_CXX_COMPILER:FILEPATH=F:/Intel/oneAPI/mpi/latest/bin/mpicl.bat
 
 //MPI CXX compiler wrapper include directories
-MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=
+MPI_CXX_COMPILER_INCLUDE_DIRS:STRING=F:/Intel/oneAPI/mpi/latest/include;F:/Intel/oneAPI/mpi/latest/include/mpi
 
 //MPI CXX compilation definitions
 MPI_CXX_COMPILE_DEFINITIONS:STRING=
 
-//MPI CXX compilation flags
+//MPI CXX compilation options
 MPI_CXX_COMPILE_OPTIONS:STRING=
 
 //Path to a file.
-MPI_CXX_HEADER_DIR:PATH=C:/Program Files (x86)/Microsoft SDKs/MPI/Include
+MPI_CXX_HEADER_DIR:PATH=F:/Intel/oneAPI/mpi/latest/include
 
 //MPI CXX libraries to link against
-MPI_CXX_LIB_NAMES:STRING=msmpi
+MPI_CXX_LIB_NAMES:STRING=impi;impicxx
 
 //MPI CXX linker flags
 MPI_CXX_LINK_FLAGS:STRING=
@@ -256,28 +256,31 @@ MPI_CXX_SKIP_MPICXX:BOOL=OFF
 MPI_C_ADDITIONAL_INCLUDE_DIRS:STRING=
 
 //MPI compiler for C
-MPI_C_COMPILER:FILEPATH=MPI_C_COMPILER-NOTFOUND
+MPI_C_COMPILER:FILEPATH=F:/Intel/oneAPI/mpi/latest/bin/mpicl.bat
 
 //MPI C compiler wrapper include directories
-MPI_C_COMPILER_INCLUDE_DIRS:STRING=
+MPI_C_COMPILER_INCLUDE_DIRS:STRING=F:/Intel/oneAPI/mpi/latest/include;F:/Intel/oneAPI/mpi/latest/include/mpi
 
 //MPI C compilation definitions
 MPI_C_COMPILE_DEFINITIONS:STRING=
 
-//MPI C compilation flags
+//MPI C compilation options
 MPI_C_COMPILE_OPTIONS:STRING=
 
 //Path to a file.
-MPI_C_HEADER_DIR:PATH=C:/Program Files (x86)/Microsoft SDKs/MPI/Include
+MPI_C_HEADER_DIR:PATH=F:/Intel/oneAPI/mpi/latest/include
 
 //MPI C libraries to link against
-MPI_C_LIB_NAMES:STRING=msmpi
+MPI_C_LIB_NAMES:STRING=impi;impicxx
 
 //MPI C linker flags
 MPI_C_LINK_FLAGS:STRING=
 
-//Location of the msmpi library for Microsoft MPI
-MPI_msmpi_LIBRARY:FILEPATH=C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib
+//Location of the impi library for MPI
+MPI_impi_LIBRARY:FILEPATH=F:/Intel/oneAPI/mpi/latest/lib/impi.lib
+
+//Location of the impicxx library for MPI
+MPI_impicxx_LIBRARY:FILEPATH=F:/Intel/oneAPI/mpi/latest/lib/impicxx.lib
 
 //Enable NBC support
 NBC:BOOL=OFF
@@ -286,7 +289,7 @@ NBC:BOOL=OFF
 PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
-PKG_CONFIG_EXECUTABLE:FILEPATH=PKG_CONFIG_EXECUTABLE-NOTFOUND
+PKG_CONFIG_EXECUTABLE:FILEPATH=D:/Program_Professional/msys64/usr/bin/pkg-config.exe
 
 //Build shared library
 SHARED:BOOL=OFF
@@ -446,11 +449,13 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding MPI
-FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][TRUE][c ][v2.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][TRUE][c ][v3.1()]
 //Details about finding MPI_C
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib][msmpi][C:/Program Files (x86)/Microsoft SDKs/MPI/Include][TRUE][v2.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[F:/Intel/oneAPI/mpi/latest/lib/impi.lib][F:/Intel/oneAPI/mpi/latest/lib/impicxx.lib][impi;impicxx][F:/Intel/oneAPI/mpi/latest/include][TRUE][v3.1()]
 //Details about finding MPI_CXX
-FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[C:/Program Files (x86)/Microsoft SDKs/MPI/Lib/x64/msmpi.lib][msmpi][C:/Program Files (x86)/Microsoft SDKs/MPI/Include][TRUE][v2.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[F:/Intel/oneAPI/mpi/latest/lib/impi.lib][F:/Intel/oneAPI/mpi/latest/lib/impicxx.lib][impi;impicxx][F:/Intel/oneAPI/mpi/latest/include][TRUE][v3.1()]
+//ADVANCED property for variable: MPIEXEC_EXECUTABLE
+MPIEXEC_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_MAX_NUMPROCS
 MPIEXEC_MAX_NUMPROCS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_NUMPROC_FLAG
@@ -499,8 +504,10 @@ MPI_RESULT_CXX_test_mpi_MPICXX:INTERNAL=TRUE
 MPI_RESULT_CXX_test_mpi_normal:INTERNAL=TRUE
 //Result of TRY_COMPILE
 MPI_RESULT_C_test_mpi_normal:INTERNAL=TRUE
-//ADVANCED property for variable: MPI_msmpi_LIBRARY
-MPI_msmpi_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_impi_LIBRARY
+MPI_impi_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_impicxx_LIBRARY
+MPI_impicxx_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_ARGN
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE

@@ -23,13 +23,6 @@ set(SRCDIR "${SRCROOT}/src")
 set(INCDIR "${SRCROOT}/src")
 set(LIBDIR "${SRCROOT}/lib")
 
-# Configure installation directory
-if(DEFINED DESTDIR)
-  set(INSTALL_ROOT "${DESTDIR}")
-else()
-  set(INSTALL_ROOT "${SRCROOT}/build")
-endif()
-
 # Feature configuration options
 option(MPI "Enable MPI support" ON)
 option(ADDUS "Add underscore prefix" ON)
@@ -113,8 +106,16 @@ if(SHARED)
 endif()
 
 # Installation targets
-install(TARGETS ${LIBNAME} DESTINATION ${INSTALL_ROOT}/lib)
-install(DIRECTORY ${SRCDIR}/ DESTINATION ${INSTALL_ROOT}/include/gslib FILES_MATCHING PATTERN "*.h")
+install(TARGETS ${LIBNAME}
+    EXPORT ${LIBNAME}Targets
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
+    LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
+)
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/include
+    FILES_MATCHING PATTERN "*.h"
+)
 
 # C test configurations
 # set(TESTS

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/gslib")
+  set(CMAKE_INSTALL_PREFIX "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -33,15 +33,27 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./build/lib" TYPE STATIC_LIBRARY FILES "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/gs.lib")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/install/lib/gs.lib")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/install/lib" TYPE STATIC_LIBRARY FILES "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/gs.lib")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/gs.dir/install-cxx-module-bmi-Release.cmake" OPTIONAL)
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/./build/include/gslib" TYPE DIRECTORY FILES "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/./src/" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/install/include/")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/install/include" TYPE DIRECTORY FILES "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/include/" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

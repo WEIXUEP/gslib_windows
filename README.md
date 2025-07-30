@@ -48,8 +48,12 @@ nmake
 
 Different make options are available (see CMakeLists.txt). We can get gslib_windows\build\gs.lib for windows MSVC.
 
-This CMakeLists.txt can not auto generate "include" and "lib" folders, I copy this two folders generating by mingw64 to the "gslib_windows" folder. Then you can copy "gslib_windows\build\gs.lib" to "gslib_windows\lib\gs.lib "to get the final "include" and "lib" folders.
+You can also set the install directory with:
+```bash
+cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=yourpath .. 
 
+nmake install
+```
 
 # Applications
 
