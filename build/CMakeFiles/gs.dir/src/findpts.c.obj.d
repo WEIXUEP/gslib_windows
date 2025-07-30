@@ -29,9 +29,14 @@ K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/src/findpts_local.h
 K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/src/gs_defs.h
 K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/src/comm.h
 C:/Program Files (x86)/Windows Kits/10/include/10.0.22621.0/ucrt/assert.h
+<<<<<<< HEAD
 F:/Intel/oneAPI/mpi/latest/include/mpi.h
 F:/Intel/oneAPI/mpi/latest/include/mpio.h
 F:/Intel/oneAPI/mpi/latest/include/mpi.h
+=======
+C:/Program Files (x86)/Microsoft SDKs/MPI/Include/mpi.h
+D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/VC/Tools/MSVC/14.43.34808/include/stdint.h
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
 K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/src/crystal.h
 K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/src/sarray_transfer.h
 K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/src/sort.h

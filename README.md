@@ -39,6 +39,7 @@ Then run cmake command:
 ```
 cmake -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release ..
 ```
+<<<<<<< HEAD
 
 The build system relies on nmake with the `nmake` command. To compile gslib just run the following command in bash:
 

@@ -7,6 +7,7 @@ events:
       - "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:2 (project)"
     message: |
+<<<<<<< HEAD
       The system is: Windows - 10.0.26100 - AMD64
 
 ---
@@ -18,6 +19,9 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       The system is: Windows - 10.0.26100 - AMD64
+=======
+      The system is: Windows - 10.0.22631 - AMD64
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
   -
     kind: "message-v1"
     backtrace:
@@ -33,8 +37,13 @@ events:
       
       The output was:
       0
+<<<<<<< HEAD
       Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x64
       Copyright (C) Microsoft Corporation.  All rights reserved.
+=======
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.43.34808 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
       
       CMakeCCompilerId.c
       Microsoft (R) Incremental Linker Version 14.43.34808.0
@@ -61,9 +70,15 @@ events:
     message: |
       Detecting C compiler /showIncludes prefix:
         main.c
+<<<<<<< HEAD
         Note: including file: K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Note: including file: "
+=======
+        注意: 包含文件:  K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
   -
     kind: "message-v1"
     backtrace:
@@ -79,8 +94,13 @@ events:
       
       The output was:
       0
+<<<<<<< HEAD
       Microsoft (R) C/C++ Optimizing Compiler Version 19.43.34808 for x64
       Copyright (C) Microsoft Corporation.  All rights reserved.
+=======
+      用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.43.34808 版
+      版权所有(C) Microsoft Corporation。保留所有权利。
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
       
       CMakeCXXCompilerId.cpp
       Microsoft (R) Incremental Linker Version 14.43.34808.0
@@ -107,9 +127,15 @@ events:
     message: |
       Detecting CXX compiler /showIncludes prefix:
         main.c
+<<<<<<< HEAD
         Note: including file: K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\ShowIncludes\\foo.h
         
       Found prefix "Note: including file: "
+=======
+        注意: 包含文件:  K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\ShowIncludes\\foo.h
+        
+      Found prefix "注意: 包含文件:  "
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
   -
     kind: "try_compile-v1"
     backtrace:
@@ -119,8 +145,13 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
+<<<<<<< HEAD
       source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-op9xzk"
       binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-op9xzk"
+=======
+      source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-mzzxrj"
+      binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-mzzxrj"
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -129,6 +160,7 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-op9xzk'
         
         Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_995ed\\fast
@@ -151,6 +183,30 @@ events:
         C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_995ed.dir/manifest.res CMakeFiles\\cmTC_995ed.dir/manifest.rc
         FINAL LINK:
         D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_995ed.dir\\objects1.rsp /out:cmTC_995ed.exe /implib:cmTC_995ed.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-op9xzk\\cmTC_995ed.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_995ed.dir/intermediate.manifest CMakeFiles\\cmTC_995ed.dir/manifest.res
+=======
+        Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-mzzxrj'
+        
+        Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_d4c20\\fast
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_d4c20.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_d4c20.dir\\build
+        Building C object CMakeFiles/cmTC_d4c20.dir/CMakeCCompilerABI.c.obj
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_d4c20.dir\\CMakeCCompilerABI.c.obj.d --working-dir=K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mzzxrj --filter-prefix="注意: 包含文件:  " -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe" @C:\\Users\\24762\\AppData\\Local\\Temp\\nm5E6A.tmp
+        CMakeCCompilerABI.c
+        Linking C executable cmTC_d4c20.exe
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_d4c20.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_d4c20.dir\\objects1.rsp @C:\\Users\\24762\\AppData\\Local\\Temp\\nm5EB9.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_d4c20.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_d4c20.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_d4c20.dir/manifest.res CMakeFiles\\cmTC_d4c20.dir/manifest.rc
+        LINK Pass 1:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_d4c20.dir\\objects1.rsp /out:cmTC_d4c20.exe /implib:cmTC_d4c20.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mzzxrj\\cmTC_d4c20.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_d4c20.dir/intermediate.manifest CMakeFiles\\cmTC_d4c20.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_d4c20.dir/intermediate.manifest /out:CMakeFiles\\cmTC_d4c20.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_d4c20.dir/manifest.res CMakeFiles\\cmTC_d4c20.dir/manifest.rc
+        FINAL LINK:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_d4c20.dir\\objects1.rsp /out:cmTC_d4c20.exe /implib:cmTC_d4c20.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-mzzxrj\\cmTC_d4c20.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_d4c20.dir/intermediate.manifest CMakeFiles\\cmTC_d4c20.dir/manifest.res
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
         
       exitCode: 0
   -
@@ -190,8 +246,13 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
+<<<<<<< HEAD
       source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-egtrau"
       binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-egtrau"
+=======
+      source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-qgnd1v"
+      binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-qgnd1v"
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -201,6 +262,7 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-egtrau'
         
         Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_bd8b2\\fast
@@ -223,6 +285,30 @@ events:
         C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_bd8b2.dir/manifest.res CMakeFiles\\cmTC_bd8b2.dir/manifest.rc
         FINAL LINK:
         D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_bd8b2.dir\\objects1.rsp /out:cmTC_bd8b2.exe /implib:cmTC_bd8b2.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-egtrau\\cmTC_bd8b2.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_bd8b2.dir/intermediate.manifest CMakeFiles\\cmTC_bd8b2.dir/manifest.res
+=======
+        Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-qgnd1v'
+        
+        Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_3e108\\fast
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_3e108.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_3e108.dir\\build
+        Building CXX object CMakeFiles/cmTC_3e108.dir/CMakeCXXCompilerABI.cpp.obj
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_3e108.dir\\CMakeCXXCompilerABI.cpp.obj.d --working-dir=K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgnd1v --filter-prefix="注意: 包含文件:  " -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe" @C:\\Users\\24762\\AppData\\Local\\Temp\\nm60EB.tmp
+        CMakeCXXCompilerABI.cpp
+        Linking CXX executable cmTC_3e108.exe
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_3e108.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_3e108.dir\\objects1.rsp @C:\\Users\\24762\\AppData\\Local\\Temp\\nm613A.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_3e108.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_3e108.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_3e108.dir/manifest.res CMakeFiles\\cmTC_3e108.dir/manifest.rc
+        LINK Pass 1:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3e108.dir\\objects1.rsp /out:cmTC_3e108.exe /implib:cmTC_3e108.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgnd1v\\cmTC_3e108.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3e108.dir/intermediate.manifest CMakeFiles\\cmTC_3e108.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_3e108.dir/intermediate.manifest /out:CMakeFiles\\cmTC_3e108.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_3e108.dir/manifest.res CMakeFiles\\cmTC_3e108.dir/manifest.rc
+        FINAL LINK:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_3e108.dir\\objects1.rsp /out:cmTC_3e108.exe /implib:cmTC_3e108.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-qgnd1v\\cmTC_3e108.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_3e108.dir/intermediate.manifest CMakeFiles\\cmTC_3e108.dir/manifest.res
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
         
       exitCode: 0
   -
@@ -259,11 +345,19 @@ events:
       - "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
       - "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
       - "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+<<<<<<< HEAD
       - "CMakeLists.txt:38 (find_package)"
     description: "The MPI test test_mpi for C in mode normal"
     directories:
       source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-m7kav2"
       binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-m7kav2"
+=======
+      - "CMakeLists.txt:45 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-86bsx6"
+      binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-86bsx6"
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -272,6 +366,7 @@ events:
       variable: "MPI_RESULT_C_test_mpi_normal"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-m7kav2'
         
         Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_206a7\\fast
@@ -294,6 +389,30 @@ events:
         C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_206a7.dir/manifest.res CMakeFiles\\cmTC_206a7.dir/manifest.rc
         FINAL LINK:
         D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_206a7.dir\\objects1.rsp /out:cmTC_206a7.exe /implib:cmTC_206a7.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-m7kav2\\cmTC_206a7.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console F:\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib F:\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_206a7.dir/intermediate.manifest CMakeFiles\\cmTC_206a7.dir/manifest.res
+=======
+        Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-86bsx6'
+        
+        Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_e22d6\\fast
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_e22d6.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_e22d6.dir\\build
+        Building C object CMakeFiles/cmTC_e22d6.dir/test_mpi.c.obj
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_e22d6.dir\\test_mpi.c.obj.d --working-dir=K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86bsx6 --filter-prefix="注意: 包含文件:  " -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe" @C:\\Users\\24762\\AppData\\Local\\Temp\\nm658E.tmp
+        test_mpi.c
+        Linking C executable cmTC_e22d6.exe
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_e22d6.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_e22d6.dir\\objects1.rsp @C:\\Users\\24762\\AppData\\Local\\Temp\\nm65FD.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_e22d6.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_e22d6.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_e22d6.dir/manifest.res CMakeFiles\\cmTC_e22d6.dir/manifest.rc
+        LINK Pass 1:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_e22d6.dir\\objects1.rsp /out:cmTC_e22d6.exe /implib:cmTC_e22d6.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86bsx6\\cmTC_e22d6.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console C:\\Program Files (x86)\\Microsoft SDKs\\MPI\\Lib\\x64\\msmpi.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_e22d6.dir/intermediate.manifest CMakeFiles\\cmTC_e22d6.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_e22d6.dir/intermediate.manifest /out:CMakeFiles\\cmTC_e22d6.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_e22d6.dir/manifest.res CMakeFiles\\cmTC_e22d6.dir/manifest.rc
+        FINAL LINK:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_e22d6.dir\\objects1.rsp /out:cmTC_e22d6.exe /implib:cmTC_e22d6.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-86bsx6\\cmTC_e22d6.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console C:\\Program Files (x86)\\Microsoft SDKs\\MPI\\Lib\\x64\\msmpi.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_e22d6.dir/intermediate.manifest CMakeFiles\\cmTC_e22d6.dir/manifest.res
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
         
       exitCode: 0
   -
@@ -302,11 +421,19 @@ events:
       - "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
       - "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindMPI.cmake:1326 (_MPI_try_staged_settings)"
       - "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindMPI.cmake:1649 (_MPI_check_lang_works)"
+<<<<<<< HEAD
       - "CMakeLists.txt:38 (find_package)"
     description: "The MPI test test_mpi for CXX in mode normal"
     directories:
       source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-kncfta"
       binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-kncfta"
+=======
+      - "CMakeLists.txt:45 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-0d41d6"
+      binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-0d41d6"
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -315,6 +442,7 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_normal"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-kncfta'
         
         Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_6a551\\fast
@@ -337,6 +465,30 @@ events:
         C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_6a551.dir/manifest.res CMakeFiles\\cmTC_6a551.dir/manifest.rc
         FINAL LINK:
         D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_6a551.dir\\objects1.rsp /out:cmTC_6a551.exe /implib:cmTC_6a551.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kncfta\\cmTC_6a551.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console F:\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib F:\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_6a551.dir/intermediate.manifest CMakeFiles\\cmTC_6a551.dir/manifest.res
+=======
+        Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-0d41d6'
+        
+        Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_71952\\fast
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_71952.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_71952.dir\\build
+        Building CXX object CMakeFiles/cmTC_71952.dir/test_mpi.cpp.obj
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_71952.dir\\test_mpi.cpp.obj.d --working-dir=K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0d41d6 --filter-prefix="注意: 包含文件:  " -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe" @C:\\Users\\24762\\AppData\\Local\\Temp\\nm69A5.tmp
+        test_mpi.cpp
+        Linking CXX executable cmTC_71952.exe
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_71952.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_71952.dir\\objects1.rsp @C:\\Users\\24762\\AppData\\Local\\Temp\\nm6A14.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_71952.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_71952.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_71952.dir/manifest.res CMakeFiles\\cmTC_71952.dir/manifest.rc
+        LINK Pass 1:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_71952.dir\\objects1.rsp /out:cmTC_71952.exe /implib:cmTC_71952.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0d41d6\\cmTC_71952.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console C:\\Program Files (x86)\\Microsoft SDKs\\MPI\\Lib\\x64\\msmpi.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_71952.dir/intermediate.manifest CMakeFiles\\cmTC_71952.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_71952.dir/intermediate.manifest /out:CMakeFiles\\cmTC_71952.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_71952.dir/manifest.res CMakeFiles\\cmTC_71952.dir/manifest.rc
+        FINAL LINK:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_71952.dir\\objects1.rsp /out:cmTC_71952.exe /implib:cmTC_71952.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0d41d6\\cmTC_71952.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console C:\\Program Files (x86)\\Microsoft SDKs\\MPI\\Lib\\x64\\msmpi.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_71952.dir/intermediate.manifest CMakeFiles\\cmTC_71952.dir/manifest.res
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
         
       exitCode: 0
   -
@@ -344,11 +496,19 @@ events:
     backtrace:
       - "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindMPI.cmake:1282 (try_compile)"
       - "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.30/Modules/FindMPI.cmake:1676 (_MPI_try_staged_settings)"
+<<<<<<< HEAD
       - "CMakeLists.txt:38 (find_package)"
     description: "The MPI test test_mpi for CXX in mode MPICXX"
     directories:
       source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-0doghs"
       binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-0doghs"
+=======
+      - "CMakeLists.txt:45 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-1jagzd"
+      binary: "K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-1jagzd"
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -357,6 +517,7 @@ events:
       variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
       cached: true
       stdout: |
+<<<<<<< HEAD
         Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-0doghs'
         
         Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_acec2\\fast
@@ -511,6 +672,30 @@ events:
         C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_7a655.dir/manifest.res CMakeFiles\\cmTC_7a655.dir/manifest.rc
         FINAL LINK:
         D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_7a655.dir\\objects1.rsp /out:cmTC_7a655.exe /implib:cmTC_7a655.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lfcimu\\cmTC_7a655.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console F:\\Intel\\oneAPI\\mpi\\latest\\lib\\impi.lib F:\\Intel\\oneAPI\\mpi\\latest\\lib\\impicxx.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_7a655.dir/intermediate.manifest CMakeFiles\\cmTC_7a655.dir/manifest.res
+=======
+        Change Dir: 'K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/CMakeScratch/TryCompile-1jagzd'
+        
+        Run Build Command(s): "D:/Program_Professional/Microsoft Visual Studio/2022/BuildTools/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/bin/cmake.exe" -E env VERBOSE=1 nmake -f Makefile /nologo cmTC_fb28a\\fast
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\HostX64\\x64\\nmake.exe"  -f CMakeFiles\\cmTC_fb28a.dir\\build.make /nologo -L                  CMakeFiles\\cmTC_fb28a.dir\\build
+        Building CXX object CMakeFiles/cmTC_fb28a.dir/test_mpi.cpp.obj
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\\cmTC_fb28a.dir\\test_mpi.cpp.obj.d --working-dir=K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1jagzd --filter-prefix="注意: 包含文件:  " -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\cl.exe" @C:\\Users\\24762\\AppData\\Local\\Temp\\nm6BF7.tmp
+        test_mpi.cpp
+        Linking CXX executable cmTC_fb28a.exe
+        	"D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_fb28a.dir --rc=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests -- "D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe" /nologo @CMakeFiles\\cmTC_fb28a.dir\\objects1.rsp @C:\\Users\\24762\\AppData\\Local\\Temp\\nm6C65.tmp
+        Visual Studio Incremental Link with embedded manifests
+        Create CMakeFiles\\cmTC_fb28a.dir/manifest.rc
+        Create empty: CMakeFiles\\cmTC_fb28a.dir/embed.manifest
+        RC Pass 1:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_fb28a.dir/manifest.res CMakeFiles\\cmTC_fb28a.dir/manifest.rc
+        LINK Pass 1:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_fb28a.dir\\objects1.rsp /out:cmTC_fb28a.exe /implib:cmTC_fb28a.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1jagzd\\cmTC_fb28a.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console C:\\Program Files (x86)\\Microsoft SDKs\\MPI\\Lib\\x64\\msmpi.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_fb28a.dir/intermediate.manifest CMakeFiles\\cmTC_fb28a.dir/manifest.res
+        MT:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe /nologo /manifest CMakeFiles\\cmTC_fb28a.dir/intermediate.manifest /out:CMakeFiles\\cmTC_fb28a.dir/embed.manifest /notify_update
+        RC Pass 2:
+        C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\rc.exe /fo CMakeFiles\\cmTC_fb28a.dir/manifest.res CMakeFiles\\cmTC_fb28a.dir/manifest.rc
+        FINAL LINK:
+        D:\\Program_Professional\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.43.34808\\bin\\Hostx64\\x64\\link.exe /nologo @CMakeFiles\\cmTC_fb28a.dir\\objects1.rsp /out:cmTC_fb28a.exe /implib:cmTC_fb28a.lib /pdb:K:\\Project_WXP\\20241131_FEM_Palace\\FEM_GPU\\gslib_windows\\build\\CMakeFiles\\CMakeScratch\\TryCompile-1jagzd\\cmTC_fb28a.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console C:\\Program Files (x86)\\Microsoft SDKs\\MPI\\Lib\\x64\\msmpi.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_fb28a.dir/intermediate.manifest CMakeFiles\\cmTC_fb28a.dir/manifest.res
+>>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
         
       exitCode: 0
 ...
