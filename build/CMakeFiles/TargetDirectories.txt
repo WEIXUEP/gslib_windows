@@ -1,6 +1,0 @@
-K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/gs.dir
-K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/edit_cache.dir
-K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/rebuild_cache.dir
-K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/list_install_components.dir
-K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/install.dir
-K:/Project_WXP/20241131_FEM_Palace/FEM_GPU/gslib_windows/build/CMakeFiles/install/local.dir

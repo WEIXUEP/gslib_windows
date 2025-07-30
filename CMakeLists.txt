@@ -23,16 +23,6 @@ set(SRCDIR "${SRCROOT}/src")
 set(INCDIR "${SRCROOT}/src")
 set(LIBDIR "${SRCROOT}/lib")
 
-<<<<<<< HEAD
-=======
-# Configure installation directory
-if(DEFINED DESTDIR)
-  set(INSTALL_ROOT "${DESTDIR}")
-else()
-  set(INSTALL_ROOT "${SRCROOT}/build")
-endif()
-
->>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
 # Feature configuration options
 option(MPI "Enable MPI support" ON)
 option(ADDUS "Add underscore prefix" ON)
@@ -115,9 +105,17 @@ if(SHARED)
   add_library(${LIBNAME} SHARED ${GS} ${FWRAPPER} ${INTP})
 endif()
 
-# Set library properties
-install(TARGETS ${LIBNAME} DESTINATION ${INSTALL_ROOT}/lib)
-install(DIRECTORY ${SRCDIR}/ DESTINATION ${INSTALL_ROOT}/include/gslib FILES_MATCHING PATTERN "*.h")
+# Installation targets
+install(TARGETS ${LIBNAME}
+    EXPORT ${LIBNAME}Targets
+    ARCHIVE DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
+    LIBRARY DESTINATION ${CMAKE_INSTALL_PREFIX}/lib
+)
+
+install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/include
+    FILES_MATCHING PATTERN "*.h"
+)
 
 # C test configurations
 # set(TESTS
@@ -150,7 +148,6 @@ install(DIRECTORY ${SRCDIR}/ DESTINATION ${INSTALL_ROOT}/include/gslib FILES_MAT
 #   add_test(NAME ${test_name} COMMAND ${test_name})
 # endforeach()
 
->>>>>>> 85bd52113965beadd31900026355e7b6598c9f1c
 # Fortran test configurations (currently disabled)
 # set(FTESTS
 #   ${FTESTDIR}/f-igs.f
